@@ -13,7 +13,10 @@ const plugin: JupyterFrontEndPlugin<void> = {
   description: 'A JupyterLab extension.',
   autoStart: true,
   optional: [ISettingRegistry],
-  activate: (app: JupyterFrontEnd, settingRegistry: ISettingRegistry | null) => {
+  activate: (
+    app: JupyterFrontEnd,
+    settingRegistry: ISettingRegistry | null
+  ) => {
     console.log('JupyterLab extension jupyterlab-ascii-homer is activated!');
 
     // print homer simpsons as ascii art
@@ -39,10 +42,16 @@ const plugin: JupyterFrontEndPlugin<void> = {
       settingRegistry
         .load(plugin.id)
         .then(settings => {
-          console.log('jupyterlab-ascii-homer settings loaded:', settings.composite);
+          console.log(
+            'jupyterlab-ascii-homer settings loaded:',
+            settings.composite
+          );
         })
         .catch(reason => {
-          console.error('Failed to load settings for jupyterlab-ascii-homer.', reason);
+          console.error(
+            'Failed to load settings for jupyterlab-ascii-homer.',
+            reason
+          );
         });
     }
   }
