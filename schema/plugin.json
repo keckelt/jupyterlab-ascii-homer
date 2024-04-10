@@ -1,0 +1,8 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "jupyterlab-ascii-homer",
+  "description": "jupyterlab-ascii-homer settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false
+}
