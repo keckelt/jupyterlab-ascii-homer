@@ -16,6 +16,25 @@ const plugin: JupyterFrontEndPlugin<void> = {
   activate: (app: JupyterFrontEnd, settingRegistry: ISettingRegistry | null) => {
     console.log('JupyterLab extension jupyterlab-ascii-homer is activated!');
 
+    // print homer simpsons as ascii art
+    console.log(`
+        ___
+       //_\\_
+     ."\\    ".
+    /          \\
+    |           \\_
+    |       ,--.-.)
+    \\     /  o \\o\\
+    /\\/\\  \\    /_/
+      (_.   \`--'__)
+      |     .-'  \\
+      |  .-'.     )
+      | (  _/--.-'
+      |  \`.___.'
+            (
+    src: https://www.asciiart.eu/cartoons/simpsons
+    `);
+
     if (settingRegistry) {
       settingRegistry
         .load(plugin.id)
