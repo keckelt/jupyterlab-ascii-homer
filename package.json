@@ -1,7 +1,7 @@
 {
     "name": "jupyterlab-ascii-homer",
     "version": "0.1.0",
-    "description": "A JupyterLab extension.",
+    "description": "JupyterLab extension that prints Homer as ASCII art.",
     "keywords": [
         "jupyter",
         "jupyterlab",

@@ -2,7 +2,8 @@
 
 [![Github Actions Status](https://github.com/keckelt/jupyterlab-ascii-homer/workflows/Build/badge.svg)](https://github.com/keckelt/jupyterlab-ascii-homer/actions/workflows/build.yml)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/keckelt/jupyterlab-ascii-homer/main?urlpath=lab)
-A JupyterLab extension.
+
+JupyterLab extension that prints Homer as ASCII art.
 
 ## Requirements
 
